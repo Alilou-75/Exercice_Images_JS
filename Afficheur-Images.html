@@ -9,18 +9,34 @@ function affichage(){
 	alert("Tout es OK !");
 }
 function cacher(){
-	document.getElementById('Image1').style.display="None";	
+	if(document.getElementById('Image1').checked){
+			document.getElementById('Image1').style.display="None";
+		}
+	else{alert("Bouton option NON coché");}
+	if(document.getElementById('Image2').checked){
+			document.getElementById('Image2').style.display="None";
+		}
+	else{alert("Bouton option NON coché");}	
+	if(document.getElementById('Image3').checked){
+			document.getElementById('Image3').style.display="None";
+		}
+	else{alert("Bouton option NON coché");}	
 }
 function presenter(){
-	document.getElementById('Image1').style.display="Block";	
+	if(document.getElementById('Image1').checked){
+			document.getElementById('Image1').style.display="Block";
+		}
+	else{alert("Bouton option NON coché");}
+	if(document.getElementById('Image2').checked){
+			document.getElementById('Image2').style.display="Block";
+		}
+	else{alert("Bouton option NON coché");}	
+	if(document.getElementById('Image3').checked){
+			document.getElementById('Image3').style.display="Block";
+		}
+	else{alert("Bouton option NON coché");}	
 }
 
-function controler(){
-	if(document.getElementById('Image2').checked){
-			alert("Bouton option coché");
-		}
-	else{alert("Bouton option NON coché");}		
-}
 
 </script>
 </head>
@@ -31,7 +47,7 @@ function controler(){
 <p><input type="checkbox" id="Control"> Image 1</p>
 <p><input type="checkbox" id="Control"> Image 2</p>
  <p><input type="checkbox" id="Control"> Image 3</p>
-<button onclick="controler()">Check</button>
+
 <p id="Image1"><img src="Image1.jpg" width="300"</p>
 <p id="Image2"><img src="Image2.jpg" width="300"</p>
 <p id="Image3"><img src="Image3.jpg" width="300"</p>
