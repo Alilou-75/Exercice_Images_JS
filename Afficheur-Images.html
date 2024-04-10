@@ -9,10 +9,14 @@ function affichage(){
 	alert("Tout es OK !");
 }
 function cacher(){
-	document.getElementById('Image').style.display="None";
+	document.getElementById('Image1').style.display="None";
+	document.getElementById('Image2').style.display="None";
+	document.getElementById('Image3').style.display="None";
 }
 function presenter(){
-	document.getElementById('Image').style.display="Block";
+	document.getElementById('Image1').style.display="Block";
+	document.getElementById('Image2').style.display="Block";
+	document.getElementById('Image3').style.display="Block";
 }
 
 function controler(){
@@ -33,9 +37,9 @@ function controler(){
   <p><input type="checkbox" id="Control"> Image 3</p>
 	<button onclick="controler()">Check</button>
 
-<p id="Image1"><img src="Image1.jpg"</p>
-<p id="Image2"><img src="Image2.jpg"</p>
-<p id="Image3"><img src="Image3.jpg"</p>
+<p id="Image1"><img src="Image1.jpg" width="300"</p>
+<p id="Image2"><img src="Image2.jpg" width="300"</p>
+<p id="Image3"><img src="Image3.jpg" width="300"</p>
 <button onclick="presenter()">Presenter</button>
 <button onclick="cacher()">Cacher</button>
   
